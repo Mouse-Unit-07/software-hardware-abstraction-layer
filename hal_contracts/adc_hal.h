@@ -1,20 +1,26 @@
 /*-------------------------------- FILE INFO ---------------------------------*/
-/* Filename           : c_header.h                                            */
+/* Filename           : adc_hal.h                                             */
 /*                                                                            */
-/* Interface w/ a function to print Hello World                               */
+/* Analog to digital conversion HAL interface                                 */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#ifndef PRINT_HELLO_WORLD_H_
-#define PRINT_HELLO_WORLD_H_
+#ifndef ADC_HAL_H_
+#define ADC_HAL_H_
 
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-/* none */
+typedef struct {
+    void (*init_adc)(void);
+    void (*deinit_adc)(void);
+    void (*enable_adc_channel)(uint32_t adc_number);
+    void (*disable_adc_channel)(uint32_t adc_number);
+    uint32_t (*read_adc_channel)(uint32_t adc_number);
+} adc_hal_handler;
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */
 /*----------------------------------------------------------------------------*/
-void printHelloWorldTwice(void);
+/* none */
 
-#endif /* PRINT_HELLO_WORLD_H_ */
+#endif /* ADC_HAL_H_ */

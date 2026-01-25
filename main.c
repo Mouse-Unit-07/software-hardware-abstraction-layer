@@ -8,7 +8,15 @@
 /*----------------------------------------------------------------------------*/
 /*                               Include Files                                */
 /*----------------------------------------------------------------------------*/
-#include "repeat_hello_world/repeat_hello_world.h"
+#include <stdint.h>
+#include "hal_contracts/adc_hal.h"
+#include "hal_contracts/clock_hal.h"
+#include "hal_contracts/external_interrupt_controller_hal.h"
+#include "hal_contracts/gpio_hal.h"
+#include "hal_contracts/internal_interrupt_controller_hal.h"
+#include "hal_contracts/pwm_hal.h"
+#include "hal_contracts/timer_counter_hal.h"
+#include "hal_contracts/usart_hal.h"
 
 /*----------------------------------------------------------------------------*/
 /*                                 Debug Space                                */
@@ -34,5 +42,5 @@
 /*----------------------------------------------------------------------------*/
 int main(void)
 {
-    printHelloWorldTwice();
+    // nothing to test
 }
