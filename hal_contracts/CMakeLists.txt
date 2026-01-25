@@ -1,10 +1,11 @@
 #--------------------------------- FILE INFO ----------------------------------#
 # Filename           : CMakeLists.txt                                          #
 #                                                                              #
-# Top level CMakeLists.txt file (for this software repo)                       #
+# CMakeLists.txt file for hal_contracts files                                  #
 #                                                                              #
 #------------------------------------------------------------------------------#
-cmake_minimum_required(VERSION 4.0.2)
-project(hardware_abstraction_layer_project LANGUAGES C)
+add_library(hal_contracts_lib INTERFACE)
 
-add_subdirectory(hal_contracts)
+target_include_directories(hal_contracts_lib INTERFACE
+    ${CMAKE_CURRENT_LIST_DIR}
+)
