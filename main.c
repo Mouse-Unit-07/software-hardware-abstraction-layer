@@ -1,7 +1,7 @@
 /*-------------------------------- FILE INFO ---------------------------------*/
 /* Filename           : main.c                                                */
 /*                                                                            */
-/* main file for for flashing/testing repeat_hello_world interface on mcu     */
+/* main file for for flashing/testing hal_contracts interface on mcu          */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 
