@@ -10,14 +10,12 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef void (*external_callback_function)(void);
-
-typedef struct {
+struct eic_hal_handler{
     void (*init_external_interrupt_controller)(void);
     void (*deinit_external_interrupt_controller)(void);
     void (*set_external_callback)(uint32_t line, 
-        external_callback_function callback);
-} eic_hal_handler;
+        void (*callback)(void));
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */

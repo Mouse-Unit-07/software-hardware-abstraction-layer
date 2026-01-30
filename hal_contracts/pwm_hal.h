@@ -10,11 +10,11 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef struct {
+struct pwm_hal_handler {
     void (*init_pwm)(void);
     void (*deinit_pwm)(void);
     void (*set_pwm_duty_cycle_percent)(uint32_t line, uint32_t percent);
-} pwm_hal_handler;
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */
