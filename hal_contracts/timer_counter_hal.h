@@ -10,12 +10,12 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef struct {
+struct tc_hal_handler {
     void (*init_timer_counter)(void);
     void (*deinit_timer_counter)(void);
     uint32_t (*get_timer_count)(void);
     void (*restart_timer)(void);
-} tc_hal_handler;
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */

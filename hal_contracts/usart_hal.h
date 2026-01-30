@@ -10,10 +10,10 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef struct {
+struct usart_hal_handler {
     void (*init_usart)(void);
     void (*deinit_usart)(void);
-} usart_hal_handler;
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */

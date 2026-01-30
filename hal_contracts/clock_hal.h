@@ -10,12 +10,12 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef struct {
+struct clock_hal_handler {
     void (*init_clock)(void);
     void (*deinit_clock)(void);
     void (*delay_ms)(uint32_t delay_time);
     void (*delay_us)(uint32_t delay_time);
-} clock_hal_handler;
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */

@@ -10,12 +10,12 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
-typedef struct {
+struct iic_hal_handler {
     void (*init_internal_interrupt_controller)(void);
     void (*deinit_internal_interrupt_controller)(void);
     void (*enable_global_interrupts)(void);
     void (*disable_global_interrupts)(void);
-} iic_hal_handler;
+};
 
 /*----------------------------------------------------------------------------*/
 /*                         Public Function Prototypes                         */
