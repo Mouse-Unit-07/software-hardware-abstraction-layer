@@ -10,10 +10,12 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
+struct eic_handle;
+
 struct eic_hal_handler{
     void (*init_external_interrupt_controller)(void);
     void (*deinit_external_interrupt_controller)(void);
-    void (*set_external_callback)(uint32_t line, 
+    void (*set_external_callback)(const struct eic_handle *handle, 
         void (*callback)(void));
 };
 
