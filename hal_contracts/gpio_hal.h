@@ -10,12 +10,14 @@
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
+struct gpio_handle;
+
 struct gpio_hal_handler {
     void (*init_gpio)(void);
     void (*deinit_gpio)(void);
-    uint32_t (*read_gpio_pin)(uint32_t gpio_number);
-    void (*write_gpio_pin)(uint32_t gpio_number);
-    void (*toggle_gpio_pin)(uint32_t gpio_number);
+    uint32_t (*read_gpio_pin)(const struct gpio_handle *handle);
+    void (*write_gpio_pin)(const struct gpio_handle *handle);
+    void (*toggle_gpio_pin)(const struct gpio_handle *handle);
 };
 
 /*----------------------------------------------------------------------------*/
