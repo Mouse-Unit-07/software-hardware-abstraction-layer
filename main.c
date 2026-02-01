@@ -9,6 +9,7 @@
 /*                               Include Files                                */
 /*----------------------------------------------------------------------------*/
 #include <stdint.h>
+#include <stdbool.h>
 #include "hal_contracts/adc_hal.h"
 #include "hal_contracts/clock_hal.h"
 #include "hal_contracts/external_interrupt_controller_hal.h"
