@@ -15,7 +15,7 @@ struct pwm_handle;
 struct pwm_hal_handler {
     void (*init_pwm)(void);
     void (*deinit_pwm)(void);
-    void (*set_pwm_duty_cycle_percent)(struct pwm_handle *handle, uint32_t percent);
+    void (*set_pwm_duty_cycle_percent)(const struct pwm_handle *handle, uint32_t percent);
 };
 
 /*----------------------------------------------------------------------------*/
