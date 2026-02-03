@@ -1,18 +1,18 @@
 /*-------------------------------- FILE INFO ---------------------------------*/
-/* Filename           : internal_interrupt_controller_hal.h                   */
+/* Filename           : iic_hal.h                                             */
 /*                                                                            */
 /* Internal interrupt controller HAL interface                                */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#ifndef INTERNAL_INTERRUPT_CONTROLLER_HAL_H_
-#define INTERNAL_INTERRUPT_CONTROLLER_HAL_H_
+#ifndef IIC_HAL_H_
+#define IIC_HAL_H_
 
 /*----------------------------------------------------------------------------*/
 /*                             Public Definitions                             */
 /*----------------------------------------------------------------------------*/
 struct iic_hal_handler {
-    void (*init_internal_interrupt_controller)(void);
-    void (*deinit_internal_interrupt_controller)(void);
+    void (*init_iic)(void);
+    void (*deinit_iic)(void);
     void (*enable_global_interrupts)(void);
     void (*disable_global_interrupts)(void);
 };
@@ -22,4 +22,4 @@ struct iic_hal_handler {
 /*----------------------------------------------------------------------------*/
 /* none */
 
-#endif /* INTERNAL_INTERRUPT_CONTROLLER_HAL_H_ */
+#endif /* IIC_HAL_H_ */
