@@ -12,9 +12,9 @@
 #include <stdbool.h>
 #include "hal_contracts/adc_hal.h"
 #include "hal_contracts/clock_hal.h"
-#include "hal_contracts/external_interrupt_controller_hal.h"
+#include "hal_contracts/eic_hal.h"
 #include "hal_contracts/gpio_hal.h"
-#include "hal_contracts/internal_interrupt_controller_hal.h"
+#include "hal_contracts/iic_hal.h"
 #include "hal_contracts/pwm_hal.h"
 #include "hal_contracts/timer_counter_hal.h"
 #include "hal_contracts/usart_hal.h"
