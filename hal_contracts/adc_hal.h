@@ -15,8 +15,6 @@ struct adc_handle;
 struct adc_hal_handler {
     void (*init_adc)(void);
     void (*deinit_adc)(void);
-    void (*enable_adc_channel)(const struct adc_handle *handle);
-    void (*disable_adc_channel)(const struct adc_handle *handle);
     uint32_t (*read_adc_channel)(const struct adc_handle *handle);
 };
 
