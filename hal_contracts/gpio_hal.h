@@ -15,7 +15,7 @@ struct gpio_handle;
 struct gpio_hal_handler {
     void (*init_gpio)(void);
     void (*deinit_gpio)(void);
-    uint32_t (*read_gpio_pin)(const struct gpio_handle *handle);
+    bool (*read_gpio_pin)(const struct gpio_handle *handle);
     void (*write_gpio_pin)(const struct gpio_handle *handle, bool value);
     void (*toggle_gpio_pin)(const struct gpio_handle *handle);
 };
