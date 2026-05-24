@@ -13,6 +13,10 @@
 struct usart_hal_handler {
     void (*init_usart)(void);
     void (*deinit_usart)(void);
+    bool (*is_rx_buffer_empty)(void);
+    bool (*is_rx_buffer_full)(void);
+    char (*pop_rx_buffer)(void);
+    void (*clear_rx_buffer)(void);
 };
 
 /*----------------------------------------------------------------------------*/
